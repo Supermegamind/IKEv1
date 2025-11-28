@@ -48,5 +48,3 @@ python crack.py -m ddddaa test.txt -p 8
 
 Нашли пароль: 111111
 
-
-# Работа crack.py с тестовыми данными
