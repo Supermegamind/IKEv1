@@ -3,17 +3,22 @@
 
 # gen.py примеры запуска:
 python gen.py -m <algorithm> -p <password> -o <OUTPUT>
+
 Один из вариантов запуска:
 python gen.py -m sha2 -p 111111 -o test.txt
+
 справка: python gen.py -h
 
 # crack.py примеры запуска:
 python crack.py -m <mask> -p <PROCESSES> <test_file>
+
 Один из вариантов запуска:
 python crack.py -m dddddd test.txt -p 8  
 
 В случае невыбора -p, количество процессов определится автоматически
+
 В случае невыбора test_file, будут выбраны значения по умолчанию (Одинец.txt)
+
 справка: python crack.py -h
 
 # Пример работы кода gen.py
