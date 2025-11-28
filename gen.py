@@ -90,9 +90,9 @@ def main():
     parser.add_argument('-p', '--password', required=True, 
                        help='Password to generate test data')
     parser.add_argument('-f', '--file', 
-                       help='Traffic file with IKE data (optional)')
+                       help='Traffic file with IKE data')
     parser.add_argument('-o', '--output', 
-                       help='Output file to save results (optional)')
+                       help='Output file to save results')
     
     args = parser.parse_args()
     
@@ -112,4 +112,5 @@ def main():
         sys.exit(1)
 
 if __name__ == "__main__":
+
     main()
