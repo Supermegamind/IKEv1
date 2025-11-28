@@ -5,7 +5,7 @@
 python gen.py -m [algorithm] -p [password] -o [OUTPUT]
 
 Один из вариантов запуска:
-python gen.py -m sha2 -p 111111 -o test.txt
+python gen.py -m sha1 -p 111111 -o test.txt
 
 справка: python gen.py -h
 
