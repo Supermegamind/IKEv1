@@ -2,7 +2,7 @@
 Данный инструмент не поддерживает околосветовую скорость перебора, поэтому пароль из 6 символов с маской "aaaaaa" (56.8 миллиардов комбинаций) будет подбираться неприлично долго. Методом научного тыка и пристального взгляда рекомендуется начинать с маски "aaaddd" для оптимального соотношения времени и результата. Именно таким подходом был успешно идентифицирован тестовый пароль "Qwe123" за 671.41 сек.
 
 # gen.py примеры запуска:
-python gen.py -m <algorithm> -p <password> -o <OUTPUT>
+python gen.py -m [algorithm] -p [password] -o [OUTPUT]
 
 Один из вариантов запуска:
 python gen.py -m sha2 -p 111111 -o test.txt
@@ -10,10 +10,10 @@ python gen.py -m sha2 -p 111111 -o test.txt
 справка: python gen.py -h
 
 # crack.py примеры запуска:
-python crack.py -m <mask> -p <PROCESSES> <test_file>
+python crack.py -m [mask] -p [PROCESSES] [test_file]
 
 Один из вариантов запуска:
-python crack.py -m dddddd test.txt -p 8  
+python crack.py -m dddddd -p 8 test.txt   
 
 В случае невыбора -p, количество процессов определится автоматически
 
